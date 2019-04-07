@@ -30,10 +30,10 @@ $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 The robot uses the laser data to understand about its current position in the map. Also, its estimated orientation is shown as a _green arrow_ in **RVIZ** panel.<br>
 ![Alt](results/ex1_1.png)<br>
 #### Step 2
-A subgoal (marked as a _red arrow_ in **RVIZ** panel) which is just around the area under the table is assigned.<br>
+A subgoal (marked as a _red arrow_ in **RVIZ** panel) which is just around the area under the table was assigned.<br>
 ![Alt](results/ex1_2.png)<br>
 #### Step 3
-The robot moves autonomouly to the assigned subgoal.<br>
+The robot moves autonomously to the assigned subgoal.<br>
 ![Alt](results/ex1_3.png)<br>
 #### Step 4
 The robot stops moving once it reaches the assigned subgoal.<br>
