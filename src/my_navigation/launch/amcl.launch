@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+    
+    <arg name="delay_move_base"     default="2.0" />
+    
+    <!-- Map Server node -->
+    <include file="$(find my_navigation)/launch/methods/map_server_node.launch" >
+        <arg name="map_name"	default="my_race_2" />
+    </include>
+    
+    <!-- AMCL node -->
+    <include file="$(find my_navigation)/launch/methods/amcl_node.launch" >
+    </include>
+    
+    <!-- Map Base node -->
+    <node name="timed_roslaunch_move_base" pkg="timed_roslaunch" type="timed_roslaunch.sh" 
+            args="$(arg delay_move_base) my_navigation move_base_node.launch"
+            output="screen"
+    />
+    
+</launch>

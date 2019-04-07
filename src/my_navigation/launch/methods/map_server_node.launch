@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+    
+    <arg name="map_name"	default="map" />
+
+    <!-- Run the map server -->
+    <arg name="map_file" default="$(find my_navigation)/maps/$(arg map_name).yaml"/>
+    <node name="map_server_$(arg map_name)" pkg="map_server" type="map_server" args="$(arg map_file)" />
+  
+</launch>
+
