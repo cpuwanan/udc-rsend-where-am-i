@@ -2,7 +2,7 @@
 <launch>
     
     <!-- AMCL node 
-         + links the robot ('odom' frame) with the word ('map frame') 
+         + links the robot ('odom' frame) with the world ('map frame') 
     -->
     
     <arg name="set_scan_topic"  default="scan" />
