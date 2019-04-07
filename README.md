@@ -1,8 +1,6 @@
-# udc-rsend-where-am-i
+# Where Am I?
 
-#Where Am I?
-
-##Contents
+## Contents
 There are 3 packages:<br>
 * **teleop_twist_keyboard** is for manual control of robot motion.
 * **my_robot** contains gazebo environemnts for the robot.
@@ -10,7 +8,7 @@ There are 3 packages:<br>
 
 Note that some example snapshots of the robot simulator can be found inside the folder **results/**.
 
-##Usage<br>
+## Usage<br>
 #### Step 1<br>
 Open a new terminal, and launch this command to bringup the robot simulator.<br>
 ```
@@ -27,7 +25,7 @@ Open another new terminal for manual keyboard control if needed.
 $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 
-##Example Snapshots
+## Example Snapshots
 #### Step 1
 The robot uses the laser data to understand about its current position in the map. Also, its estimated orientation is shown as a _green arrow_ in **RVIZ** panel.<br>
 ![Alt](results/ex1_1.png)<br>
